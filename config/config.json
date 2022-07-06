@@ -1,0 +1,18 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/config.2.0.schema.json",
+  "version": "2.0",
+  "bundles": {
+    "spfx-http-client-demo-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/spfxHttpClientDemo/SpfxHttpClientDemoWebPart.js",
+          "manifest": "./src/webparts/spfxHttpClientDemo/SpfxHttpClientDemoWebPart.manifest.json"
+        }
+      ]
+    }
+  },
+  "externals": {},
+  "localizedResources": {
+    "SpfxHttpClientDemoWebPartStrings": "lib/webparts/spfxHttpClientDemo/loc/{locale}.js"
+  }
+}

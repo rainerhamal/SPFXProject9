@@ -1,0 +1,40 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/package-solution.schema.json",
+  "solution": {
+    "name": "spfx-http-client-demo-client-side-solution",
+    "id": "95c987f2-f5fc-40e9-aaf5-6472eb33014d",
+    "version": "1.0.0.0",
+    "includeClientSideAssets": true,
+    "skipFeatureDeployment": true,
+    "isDomainIsolated": false,
+    "developer": {
+      "name": "",
+      "websiteUrl": "",
+      "privacyUrl": "",
+      "termsOfUseUrl": "",
+      "mpnId": "Undefined-1.14.0"
+    },
+    "metadata": {
+      "shortDescription": {
+        "default": "SPFXHttpClientDemo description"
+      },
+      "longDescription": {
+        "default": "SPFXHttpClientDemo description"
+      },
+      "screenshotPaths": [],
+      "videoUrl": "",
+      "categories": []
+    },
+    "features": [
+      {
+        "title": "spfx-http-client-demo Feature",
+        "description": "The feature that activates elements of the spfx-http-client-demo solution.",
+        "id": "504f2bc5-977d-4845-b811-d00183e71325",
+        "version": "1.0.0.0"
+      }
+    ]
+  },
+  "paths": {
+    "zippedPackage": "solution/spfx-http-client-demo.sppkg"
+  }
+}
