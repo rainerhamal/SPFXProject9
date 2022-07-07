@@ -175,7 +175,7 @@ export default class SpfxHttpClientDemoWebPart extends BaseClientSideWebPart<ISp
 
   //? Add the following method to the SpFxHttpClientDemoWebPart class to delete the last item in the list:
   private _deleteListItem(): Promise<SPHttpClientResponse> {
-    //* get the last item
+    // get the last item
     return this.context.spHttpClient.get(
         this.context.pageContext.web.absoluteUrl + `/_api/web/lists/getbytitle('Countries')/items?$select=Id,Title&$orderby=ID desc&$top=1`,
         SPHttpClient.configurations.v1)
@@ -188,13 +188,13 @@ export default class SpfxHttpClientDemoWebPart extends BaseClientSideWebPart<ISp
       .then((listItem: ICountryListItem) => {
         const request: any = {};
         request.headers = {
-          'X-HTTP-METHOD': 'DELETE',
+          'X-HTTP-Method': 'DELETE',
           'IF-MATCH': '*'
         };
         request.body = JSON.stringify(listItem);
-        
+  
         return this.context.spHttpClient.post(
-          this.context.pageContext.web.absoluteUrl + `/_api/web/lists/getbytitle/('Countries')/items(${listItem.Id})`,
+          this.context.pageContext.web.absoluteUrl + `/_api/web/lists/getbytitle('Countries')/items(${listItem.Id})`,
           SPHttpClient.configurations.v1,
           request);
       });
